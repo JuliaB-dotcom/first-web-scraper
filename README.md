@@ -13,12 +13,17 @@ Python
 ## Library
 
 Beautiful Soup 4
+LXML parser 
 
 ## Run application
 
-### `install beautifulsoup4 `
+### `pip install beautifulsoup4 `
 
 Installs the beautifulsoup library.
+
+### `pip install lxml `
+
+Installs the lxml parser.
 
 ### `install`
 
