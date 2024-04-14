@@ -17,6 +17,8 @@ LXML parser
 
 ## Run application
 
+Make sure to have both Python and Pip installed before you continue!
+
 ### `pip install beautifulsoup4 `
 
 Installs the beautifulsoup library.
