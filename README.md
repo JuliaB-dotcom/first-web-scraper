@@ -8,7 +8,7 @@ Functionality:
 
 ## Language
 
-Python
+Python 3.12.3
   
 ## Library
 
@@ -19,11 +19,11 @@ LXML parser
 
 Make sure to have both Python and Pip installed before you continue!
 
-### `pip install beautifulsoup4 `
+### `pip3 install beautifulsoup4 `
 
 Installs the beautifulsoup library.
 
-### `pip install lxml `
+### `pip3 install lxml `
 
 Installs the lxml parser.
 
