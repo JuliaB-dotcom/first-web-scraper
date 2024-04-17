@@ -3,7 +3,7 @@
 The purpose of the site is to compare the grocery product prices from different grocery stores in Gothenburg!
 
 Functionality:
-* Display the prices of the most common products.
+* Display the lowest prices of common products.
 * (Ambition) search for more products.
 * (Ambition) add new products.
 
