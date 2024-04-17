@@ -3,8 +3,9 @@
 The purpose of the site is to compare the grocery product prices from different grocery stores in Sweden!
 
 Functionality:
-* See the comparison of common products.
-* Search for new products. 
+* Display the prices of the most common products.
+* (Ambition) search for more products.
+* (Ambition) add new products.
 
 ## Language
 
