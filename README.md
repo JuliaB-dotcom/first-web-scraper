@@ -28,6 +28,11 @@ Installs the beautifulsoup library.
 
 Installs the lxml parser.
 
+### `pip3 install requests`
+
+Make sure you have the ability to request a scraping website.
+
+
 ### `install`
 
 Run this command to fetch every neccessary bits, making the appilication to compile.
