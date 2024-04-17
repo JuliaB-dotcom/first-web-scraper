@@ -30,7 +30,7 @@ Installs the lxml parser.
 
 ### `pip3 install requests`
 
-Make sure you have the ability to request a scraping website.
+Make sure you have the request library for requesting info from the website.
 
 
 ### `install`
