@@ -16,6 +16,10 @@ Python 3.12.3
 Beautiful Soup 4
 LXML parser 
 
+## Framework
+
+Flask
+
 ## Run application
 
 Make sure to have both Python and Pip installed before you continue!
