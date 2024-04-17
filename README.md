@@ -1,6 +1,6 @@
 # Foodscraper, the webscraper you never knew you needed
 
-The purpose of the site is to compare the grocery product prices from different grocery stores in Sweden!
+The purpose of the site is to compare the grocery product prices from different grocery stores in Gothenburg!
 
 Functionality:
 * Display the prices of the most common products.
