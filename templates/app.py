@@ -1,8 +1,13 @@
 from flask import Flask
 
- #initializes the application 
+ # Initializes the application 
 app = Flask(__name__)
 
-#runs the app
+# Adds route
+@app.route("/")
+def home():
+    return "home page"
+
+# Runs the app
 if __name__ == '__main__':
  app.run(debug=True)
