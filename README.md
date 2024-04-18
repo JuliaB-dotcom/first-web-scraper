@@ -32,14 +32,10 @@ Installs the lxml parser.
 
 Make sure you have the request library for requesting info from the website.
 
+### `pip3 install lxml `
 
-### `install`
+Installs the lxml parser.
 
-Run this command to fetch every neccessary bits, making the appilication to compile.
+### `pip3 install Flask `
 
-### `start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `test`
+Adds the Flask framework.
