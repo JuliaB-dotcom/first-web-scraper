@@ -4,7 +4,7 @@ import requests
 ica_maxi_mince = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=blandf%C3%A4rs&sortBy=pricePerDescending')
 soup_mince = BeautifulSoup(ica_maxi_mince.text, 'lxml')
 mince_name = soup_mince.find('a', class_ = 'link__Link-sc-14ymsi2-0 cgxCVj link__Link-sc-14ymsi2-0 base__Title-sc-1mnb0pd-27 base__FixedHeightTitle-sc-1mnb0pd-43 cgxCVj ctGnCh cCRJZx').text
-mince_price = soup_mince.find('a', class_ = 'link__Link-sc-14ymsi2-0 cgxCVj link__Link-sc-14ymsi2-0 base__Title-sc-1mnb0pd-27 base__FixedHeightTitle-sc-1mnb0pd-43 cgxCVj ctGnCh cCRJZx').text
+mince_price = soup_mince.find(class_ = 'base__Price-sc-1mnb0pd-29 sc-dJjZJu gsTqdV gShugV').text
 mince_info =  mince_name + '' + mince_price
 
 # Reading existing HTML file
