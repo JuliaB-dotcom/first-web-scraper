@@ -23,6 +23,11 @@ def update_maxi_data():
   potato_maxi_name = soup_maxi_potato.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
   potato_maxi_price = soup_maxi_potato.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
 
+  ica_maxi_chicken = requests.get('https://handlaprivatkund.ica.se/stores/1004219/categories/k%C3%B6tt-f%C3%A5gel-fisk/kyckling-f%C3%A5gel/kycklingfil%C3%A9/kycklingfil%C3%A9-fryst/5467bd65-83ff-46f1-89e0-9ced80fbd757?sortBy=pricePerDescending')
+  soup_maxi_chicken = BeautifulSoup(ica_maxi_chicken.text, 'lxml')
+  chicken_maxi_name = soup_maxi_chicken.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
+  chicken_maxi_price = soup_maxi_chicken.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+
 # Reading existing HTML file
   file_path = 'templates/index.html'
   with open(file_path, 'r') as file:
@@ -40,8 +45,8 @@ def update_maxi_data():
    maxi_cell6_id = 'maxi_fish_price'
    maxi_cell7_id = 'maxi_potato_name'
    maxi_cell8_id = 'maxi_potato_price'
-   #maxi_cell9_id = 'maxi_chicken_name'
-   #maxi_cell10_id = 'maxi_chicken_price'
+   maxi_cell9_id = 'maxi_chicken_name'
+   maxi_cell10_id = 'maxi_chicken_price'
 
    maxi_cell1= soup.find('td', id=maxi_cell1_id)
    maxi_cell2= soup.find('td', id=maxi_cell2_id)
@@ -51,8 +56,8 @@ def update_maxi_data():
    maxi_cell6= soup.find('td', id=maxi_cell6_id)
    maxi_cell7= soup.find('td', id=maxi_cell7_id)
    maxi_cell8= soup.find('td', id=maxi_cell8_id)
-   #maxi_cell9= soup.find('td', id=maxi_cell9_id)
-   #maxi_cell10= soup.find('td', id=maxi_cell10_id)
+   maxi_cell9= soup.find('td', id=maxi_cell9_id)
+   maxi_cell10= soup.find('td', id=maxi_cell10_id)
   
    #Update the content of the mince name cell 
    if maxi_cell1:
@@ -101,15 +106,15 @@ def update_maxi_data():
   else:
      print(f"No cell found")
 
-  #if maxi_cell9:
-    # maxi_cell9.string = chicken_maxi_name
-  #else:
-    # print(f"No cell found")
+  if maxi_cell9:
+     maxi_cell9.string = chicken_maxi_name
+  else:
+    print(f"No cell found")
 
-  #if maxi_cell10:
-    # maxi_cell10.string = chicken_maxi_price
-  #else:
-    # print(f"No cell found")
+  if maxi_cell10:
+     maxi_cell10.string = chicken_maxi_price
+  else:
+     print(f"No cell found")
 
   with open(file_path, 'w') as file:
      file.write(str(soup))
