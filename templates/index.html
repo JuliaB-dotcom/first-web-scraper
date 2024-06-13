@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Foodscraper</title>
+    <meta charset=" utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel ="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">  
+  </head>
+  <body>
+    <div class= "header">
+<h1>FoodScraper</h1>
+<h3>Jämför priserna bland populära varor från några av de 
+ största matkedjorna!</h3>
+</div>
+<div class="table-div">
+<table>
+
+  <tr>
+    <th colspan="2">Ica Supermarket</th>
+    <th colspan="2">Ica Maxi</th>
+    <th colspan="2">Coop</th>
+    <th colspan="2">Willys</th>
+    <tr class="tr-div">
+      <tr id="tr1">
+        <th scope="col">Namn</th>
+        <th scope="col">Pris</th>
+        <th scope="col">Namn</th>
+        <th scope="col">Pris</th>
+        <th scope="col">Namn</th>
+        <th scope="col">Pris</th>
+        <th scope="col">Namn</th>
+        <th scope="col">Pris</th>
+      <tr class="tr-div">
+      <td>{{mince_maxi_name}}</td>
+      <td>{{mince_maxi_price}}</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    <tr>
+      <td>{{cheese_maxi_name}}</td>
+      <td>{{cheese_maxi_price}}</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    <tr>
+      <td>{{fish_maxi_name}}</td>
+      <td>{{fish_maxi_price}}</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    <tr>
+      <td>{{potato_maxi_name}}</td>
+      <td>{{potato_maxi_price}}</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    
+  </tr>
+
+</table>
+</div>
+  </body>
+</html>
