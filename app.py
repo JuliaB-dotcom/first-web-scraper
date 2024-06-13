@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from bs4 import BeautifulSoup
+from ica_maxi import update_maxi_data
 import requests
 
  # Initializes the application 
@@ -9,11 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     
-        ica_maxi_mince = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=blandf%C3%A4rs&sortBy=pricePerDescending')
-        soup_maxi_mince = BeautifulSoup(ica_maxi_mince.text, 'lxml')
-        mince_maxi_name = soup_maxi_mince.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-        mince_maxi_price = soup_maxi_mince.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
-
+        update_maxi_data()
         ica_maxi_cheese = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=ost&sortBy=pricePerDescending')
         soup_maxi_cheese = BeautifulSoup(ica_maxi_cheese.text, 'lxml')
         cheese_maxi_name = soup_maxi_cheese.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
@@ -31,7 +28,7 @@ def home():
     
 
 
-        return render_template("index.html", mince_maxi_name=mince_maxi_name, mince_maxi_price=mince_maxi_price, cheese_maxi_name=cheese_maxi_name,
+        return render_template("index.html", cheese_maxi_name=cheese_maxi_name,
                                 cheese_maxi_price=cheese_maxi_price, fish_maxi_name=fish_maxi_name, fish_maxi_price=fish_maxi_price,
                                   potato_maxi_name=potato_maxi_name, potato_maxi_price=potato_maxi_price)
 
