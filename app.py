@@ -1,7 +1,7 @@
 from flask import Flask, render_template
-from bs4 import BeautifulSoup
 from ica_maxi import update_maxi_data
-import requests
+#from coop import update_coop_data
+
 
  # Initializes the application 
 app = Flask(__name__)
@@ -11,6 +11,7 @@ app = Flask(__name__)
 def home():
     
         update_maxi_data()
+        
         
         return render_template("index.html")
 
