@@ -5,28 +5,28 @@ def update_maxi_data():
 
   ica_maxi_mince = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=blandf%C3%A4rs&sortBy=pricePerDescending')
   soup_maxi_mince = BeautifulSoup(ica_maxi_mince.text, 'lxml')
-  mince_maxi_name = soup_maxi_mince.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-  mince_maxi_price = soup_maxi_mince.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+  mince_maxi_name = soup_maxi_mince.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
+  mince_maxi_price = soup_maxi_mince.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
   ica_maxi_cheese = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=ost&sortBy=pricePerDescending')
   soup_maxi_cheese = BeautifulSoup(ica_maxi_cheese.text, 'lxml')
-  cheese_maxi_name = soup_maxi_cheese.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-  cheese_maxi_price = soup_maxi_cheese.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+  cheese_maxi_name = soup_maxi_cheese.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
+  cheese_maxi_price = soup_maxi_cheese.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
   ica_maxi_fish = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=fisk&sortBy=pricePerDescending')
   soup_maxi_fish = BeautifulSoup(ica_maxi_fish.text, 'lxml')
-  fish_maxi_name = soup_maxi_fish.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-  fish_maxi_price = soup_maxi_fish.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+  fish_maxi_name = soup_maxi_fish.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
+  fish_maxi_price = soup_maxi_fish.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
   ica_maxi_potato = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=Fast%20Potatis&sortBy=pricePerDescending')
   soup_maxi_potato = BeautifulSoup(ica_maxi_potato.text, 'lxml')
-  potato_maxi_name = soup_maxi_potato.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-  potato_maxi_price = soup_maxi_potato.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+  potato_maxi_name = soup_maxi_potato.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
+  potato_maxi_price = soup_maxi_potato.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
   ica_maxi_chicken = requests.get('https://handlaprivatkund.ica.se/stores/1004219/categories/k%C3%B6tt-f%C3%A5gel-fisk/kyckling-f%C3%A5gel/kycklingfil%C3%A9/kycklingfil%C3%A9-fryst/5467bd65-83ff-46f1-89e0-9ced80fbd757?sortBy=pricePerDescending')
   soup_maxi_chicken = BeautifulSoup(ica_maxi_chicken.text, 'lxml')
-  chicken_maxi_name = soup_maxi_chicken.find('h3', class_ = 'text__Text-sc-6l1yjp-0 iWlLMY').text
-  chicken_maxi_price = soup_maxi_chicken.find('div', class_ = 'base__PriceWrapper-sc-1mnb0pd-28 dDLLyP').text
+  chicken_maxi_name = soup_maxi_chicken.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
+  chicken_maxi_price = soup_maxi_chicken.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
 # Reading existing HTML file
   file_path = 'templates/index.html'
