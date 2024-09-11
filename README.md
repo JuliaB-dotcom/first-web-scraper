@@ -1,6 +1,6 @@
 # Foodupdater, started as a scraper but ended up as an updater
 
-The purpose of the site is to compare the grocery product prices from different grocery stores in the metropolian Gothenburg area!
+The purpose of the site is to collect grocery product prices from different grocery stores in the metropolian Gothenburg area, for ease of comparison between them!
 The information is manually added and not scraped from any site.
 
 Functionality:
