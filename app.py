@@ -13,6 +13,7 @@ def home():
     
        # update_maxi_data()
         update_coop_data()
+        update_maxi_data()
         
         return render_template("index.html")
 

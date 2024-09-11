@@ -6,8 +6,8 @@ def update_coop_data():
   mince_coop_name = 'Blandfärs ca 1000g'
   mince_coop_price = '89,95 kr/st'
 
-  cheese_coop_name = 'Hushållsost 1100g'
-  cheese_coop_price = '135,30 kr/st'
+  cheese_coop_name = 'Präst ost 750g'
+  cheese_coop_price = '90,00 kr/st'
 
   fish_coop_name = 'Fiskpinnar 750g'
   fish_coop_price = '52,95 kr'

@@ -3,30 +3,21 @@ import requests
 
 def update_maxi_data():
 
-  ica_maxi_mince = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=blandf%C3%A4rs&sortBy=favorite')
-  soup_maxi_mince = BeautifulSoup(ica_maxi_mince.text, 'lxml')
-  mince_maxi_name = soup_maxi_mince.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
-  mince_maxi_price = soup_maxi_mince.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
 
-  ica_maxi_cheese = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=ost&sortBy=favorite')
-  soup_maxi_cheese = BeautifulSoup(ica_maxi_cheese.text, 'lxml')
-  cheese_maxi_name = soup_maxi_cheese.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
-  cheese_maxi_price = soup_maxi_cheese.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
+  mince_maxi_name = 'Blandfärs 50/50 18% 500g KRAV ICA I love eco'
+  mince_maxi_price = '55,95 kr'
+  
+  cheese_maxi_name = 'Mild & Syrlig ost ca 500g Arla'
+  cheese_maxi_price = '72,50 kr'
 
-  ica_maxi_fish = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=fisk&sortBy=favorite')
-  soup_maxi_fish = BeautifulSoup(ica_maxi_fish.text, 'lxml')
-  fish_maxi_name = soup_maxi_fish.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
-  fish_maxi_price = soup_maxi_fish.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
+  fish_maxi_name = 'Fiskköttbullar 400g Gårdsfisk'
+  fish_maxi_price = '65,95 kr'
 
-  ica_maxi_potato = requests.get('https://handlaprivatkund.ica.se/stores/1004219/search?q=Fast%20Potatis&sortBy=favorite')
-  soup_maxi_potato = BeautifulSoup(ica_maxi_potato.text, 'lxml')
-  potato_maxi_name = soup_maxi_potato.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
-  potato_maxi_price = soup_maxi_potato.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
+  potato_maxi_name = 'Potatis Fast 1,2kg Klass 1 ICA'
+  potato_maxi_price = '33,95 kr'
 
-  ica_maxi_chicken = requests.get('https://handlaprivatkund.ica.se/stores/1004219/categories/k%C3%B6tt-f%C3%A5gel-fisk/kyckling-f%C3%A5gel/kycklingfil%C3%A9/kycklingfil%C3%A9-fryst/5467bd65-83ff-46f1-89e0-9ced80fbd757?sortBy=favorite')
-  soup_maxi_chicken = BeautifulSoup(ica_maxi_chicken.text, 'lxml')
-  chicken_maxi_name = soup_maxi_chicken.find('h3', class_ = '_text_f6lbl_1 _text--m_f6lbl_23').text
-  chicken_maxi_price = soup_maxi_chicken.find('span', class_ = '_text_f6lbl_1 _text--m_f6lbl_23 utils__PriceText-sc-1fkdssq-0 ifeOmJ').text
+  chicken_maxi_name = 'Kycklingfilé Fryst 1kg Kronfågel'
+  chicken_maxi_price = '99,95 kr'
 
 # Reading existing HTML file
   file_path = 'templates/index.html'
