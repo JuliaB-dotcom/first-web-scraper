@@ -4,19 +4,19 @@ import requests
 def update_coop_data():
 
   mince_coop_name = 'Blandfärs ca 1000g'
-  mince_coop_price = '89,95 kr/st'
+  mince_coop_price = '89,95 kr'
 
   cheese_coop_name = 'Präst ost 750g'
-  cheese_coop_price = '90,00 kr/st'
+  cheese_coop_price = '90,00 kr'
 
-  fish_coop_name = 'Fiskpinnar 750g'
-  fish_coop_price = '52,95 kr'
+  fish_coop_name = 'Stillahavsflundra 400g'
+  fish_coop_price = '66,95 kr'
 
   potato_coop_name = 'Färskpotatis'
-  potato_coop_price = '19,95 kr/kg'
+  potato_coop_price = '19,95 kr'
 
-  chicken_coop_name = 'Kycklingfile 1kg'
-  chicken_coop_price = '114 kr/st'
+  chicken_coop_name = 'Kycklingfilé 100g'
+  chicken_coop_price = '95 kr'
 
 # Reading existing HTML file
   file_path = 'templates/index.html'

@@ -12,8 +12,8 @@ def update_willys_data():
   fish_willys_name = 'Laxbitar Fryst 300g'
   fish_willys_price = '51,90 kr/st'
 
-  potato_willys_name = 'Potatis Fast Klass 1kg'
-  potato_willys_price = '37,90 kr/st'
+  potato_willys_name = 'Potatis Fast Klass 1'
+  potato_willys_price = '19,90 kr/st'
 
   chicken_willys_name = 'Kycklingfilé Bröstfilé Sverige 850g'
   chicken_willys_price = '129 kr/kg'
@@ -36,7 +36,7 @@ def update_willys_data():
    willys_cell7_id = 'willys_potato_name'
    willys_cell8_id = 'willys_potato_price'
    willys_cell9_id = 'willys_chicken_name'
-   willys_cell10_id = 'willyswillys_chicken_price'
+   willys_cell10_id = 'willys_chicken_price'
 
    willys_cell1= soup.find('td', id=willys_cell1_id)
    willys_cell2= soup.find('td', id=willys_cell2_id)

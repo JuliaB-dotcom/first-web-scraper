@@ -10,14 +10,14 @@ def update_maxi_data():
   cheese_maxi_name = 'Mild & Syrlig ost ca 500g Arla'
   cheese_maxi_price = '72,50 kr'
 
-  fish_maxi_name = 'Fiskköttbullar 400g Gårdsfisk'
-  fish_maxi_price = '65,95 kr'
+  fish_maxi_name = 'Alaska pollock Fryst 400g ICA Basic'
+  fish_maxi_price = '25,00 kr'
 
   potato_maxi_name = 'Potatis Fast 1,2kg Klass 1 ICA'
   potato_maxi_price = '33,95 kr'
 
-  chicken_maxi_name = 'Kycklingfilé Fryst 1kg Kronfågel'
-  chicken_maxi_price = '99,95 kr'
+  chicken_maxi_name = 'Kyckling minutfilé ca 600g Kronfågel'
+  chicken_maxi_price = '81,60 kr'
 
 # Reading existing HTML file
   file_path = 'templates/index.html'
