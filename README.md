@@ -1,11 +1,12 @@
-# Foodscraper, the webscraper you never knew you needed
+# Foodupdater, started as a scraper but ended up as an updater
 
-The purpose of the site is to compare the grocery product prices from different grocery stores in Gothenburg!
+The purpose of the site is to compare the grocery product prices from different grocery stores in the metropolian Gothenburg area!
+The information is manually added and not scraped from any site.
 
 Functionality:
 * Display the lowest prices of common products.
-* (Ambition) search for more products.
-* (Ambition) add new products.
+* (Ambition) Ability for the user to send an email to admin.
+* (Ambition) Add an automatic reminder to admin for checking after updates.
 
 ## Language
 
