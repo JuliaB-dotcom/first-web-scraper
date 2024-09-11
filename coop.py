@@ -3,14 +3,14 @@ import requests
 
 def update_coop_data():
 
-  mince_coop_name = 'Blandfärs ca 1000g'
-  mince_coop_price = '89,95 kr'
+  mince_coop_name = 'Nötfärs 12% 1000g'
+  mince_coop_price = '114,00 kr'
 
   cheese_coop_name = 'Präst ost 750g'
   cheese_coop_price = '90,00 kr'
 
-  fish_coop_name = 'Stillahavsflundra 400g'
-  fish_coop_price = '66,95 kr'
+  fish_coop_name = 'Alaska Pollock 4-pack 400g'
+  fish_coop_price = '39,95 kr'
 
   potato_coop_name = 'Färskpotatis'
   potato_coop_price = '19,95 kr'

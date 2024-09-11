@@ -4,8 +4,8 @@ import requests
 def update_maxi_data():
 
 
-  mince_maxi_name = 'Blandfärs 50/50 18% 500g KRAV ICA I love eco'
-  mince_maxi_price = '55,95 kr'
+  mince_maxi_name = 'Hushållsfärs Färsk 500g ICA'
+  mince_maxi_price = '50,95 kr'
   
   cheese_maxi_name = 'Mild & Syrlig ost ca 500g Arla'
   cheese_maxi_price = '72,50 kr'
