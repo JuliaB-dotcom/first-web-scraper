@@ -3,30 +3,20 @@ import requests
 
 def update_coop_data():
 
-  coop_mince = requests.get('https://www.coop.se/handla/sok/?q=blandf%C3%A4rs')
-  soup_coop_mince = BeautifulSoup(coop_mince.text, 'lxml')
-  mince_coop_name = soup_coop_mince.find('p', class_ = 'ProductTeaser-heading').text
-  mince_coop_price = soup_coop_mince.find('span', class_ = 'wqjVwCAg X7I7xYL7').text
+  mince_coop_name = 'Blandfärs ca 1000g'
+  mince_coop_price = '89,95 kr/st'
 
-  coop_cheese = requests.get('https://www.coop.se/handla/sok/?q=ost')
-  soup_coop_cheese = BeautifulSoup(coop_cheese.text, 'lxml')
-  cheese_coop_name = soup_coop_cheese.find('p', class_ = 'ProductTeaser-heading').text
-  cheese_coop_price = soup_coop_cheese.find('span', class_ = 'wqjVwCAg X7I7xYL7').text
+  cheese_coop_name = 'Hushållsost 1100g'
+  cheese_coop_price = '135,30 kr/st'
 
-  coop_fish = requests.get('https://www.coop.se/handla/sok/?q=fisk')
-  soup_coop_fish = BeautifulSoup(coop_fish.text, 'lxml')
-  fish_coop_name = soup_coop_fish.find('p', class_ = 'ProductTeaser-heading').text
-  fish_coop_price = soup_coop_fish.find('span', class_ = 'wqjVwCAg X7I7xYL7').text
+  fish_coop_name = 'Fiskpinnar 750g'
+  fish_coop_price = '52,95 kr'
 
-  coop_potato = requests.get('https://www.coop.se/handla/sok/?q=potatis')
-  soup_coop_potato = BeautifulSoup(coop_potato.text, 'lxml')
-  potato_coop_name = soup_coop_potato.find('p', class_ = 'ProductTeaser-heading').text
-  potato_coop_price = soup_coop_potato.find('span', class_ = 'wqjVwCAg X7I7xYL7').text
+  potato_coop_name = 'Färskpotatis'
+  potato_coop_price = '19,95 kr/kg'
 
-  coop_chicken = requests.get('https://www.coop.se/handla/sok/?q=kyckling')
-  soup_coop_chicken = BeautifulSoup(coop_chicken.text, 'lxml')
-  chicken_coop_name = soup_coop_chicken.find('p', class_ = 'ProductTeaser-heading').text
-  chicken_coop_price = soup_coop_chicken.find('span', class_ = 'wqjVwCAg X7I7xYL7').text
+  chicken_coop_name = 'Kycklingfile 1kg'
+  chicken_coop_price = '114 kr/st'
 
 # Reading existing HTML file
   file_path = 'templates/index.html'
@@ -75,7 +65,7 @@ def update_coop_data():
      #Update the content of the cheese name cell
 
   if coop_cell3:
-     coop_cell3.string = cheese_coop_name
+      coop_cell3.string = cheese_coop_name
   else:
      print(f"No cell found")
 
