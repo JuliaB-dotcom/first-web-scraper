@@ -6,7 +6,6 @@ The information is manually added and not scraped from any site.
 Functionality:
 * Display the lowest prices of popular products.
 * (Ambition) Ability for the user to send an email to admin.
-* (Ambition) Add an automatic reminder to admin for checking after updates.
 
 ## Language
 
