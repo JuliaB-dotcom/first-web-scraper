@@ -5,7 +5,7 @@ The information is manually added and not scraped from any site.
 
 Functionality:
 * Display the lowest prices of popular products.
-* (Ambition) Ability for the user to send an email to admin.
+* Ability for the user to contact admin.
 
 ## Language
 
